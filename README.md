@@ -12,6 +12,30 @@ pip install -r requirements.txt
 ```python
 from streamlit_authenticator import Hasher
 print(Hasher(["Maipu0205*"]).generate())
+
+[credentials]
+cookie_name = "dashboard_gm"
+cookie_key = "Maipu0205*"   # 🔒 cámbiala por una frase larga y secreta
+cookie_expiry_days = 7
+
+[users.admin]
+name = "Administrador"
+email = "admin@tuempresa.com"
+password = "Maipu0205*"   # pega aquí el hash
+role = "admin"
+
+[users.analista]
+name = "Analista BI"
+email = "analista@tuempresa.com"
+password = "Maipu0205*"   # hash generado
+role = "analista"
+
+[users.invitado]
+name = "Invitado"
+email = "invitado@tuempresa.com"
+password = "Maipu0205*"   # hash generado
+role = "visor"
+
 ```
 - Mantén **privado** `credentials.toml` y `data/`.
 
