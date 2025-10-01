@@ -11,7 +11,7 @@ pip install -r requirements.txt
 - Genera hashes con:
 ```python
 from streamlit_authenticator import Hasher
-print(Hasher(["TuClaveFuerte123!"]).generate())
+print(Hasher(["Maipu0205*"]).generate())
 ```
 - Mantén **privado** `credentials.toml` y `data/`.
 
